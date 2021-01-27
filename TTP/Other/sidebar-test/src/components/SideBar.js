@@ -47,40 +47,31 @@ class SideBar extends Component {
                 </Grid.Column>
 
                 <Grid.Column>
-                    <Sidebar.Pushable as={Segment}>
-
-
-                        <Sidebar.Pusher>
-                            <Segment basic>
-                                <Header as='h3'>Application Content</Header>
-                                <Image src='https://react.semantic-ui.com/images/wireframe/paragraph.png' />
-                            </Segment>
-                        </Sidebar.Pusher>
-                    </Sidebar.Pushable>
-                </Grid.Column>
-                <Sidebar
-                    as={Menu}
-                    animation='overlay'
-                    icon='labeled'
-                    inverted
-                    onHide={() => this.onClickCollapseSideBar(false)}
-                    vertical
-                    visible={this.state.visible}
-                    width='thin'
-                >
-                    <Menu.Item as='a'>
-                        <Icon name='home' />
+                    <Sidebar
+                        as={Menu}
+                        animation='overlay'
+                        icon='labeled'
+                        inverted
+                        onHide={() => this.onClickCollapseSideBar(false)}
+                        vertical
+                        visible={this.state.visible}
+                        width='thin'
+                    >
+                        <Menu.Item as='a'>
+                            <Icon name='home' />
                       Home
                     </Menu.Item>
-                    <Menu.Item as='a'>
-                        <Icon name='gamepad' />
+                        <Menu.Item as='a'>
+                            <Icon name='gamepad' />
                       Games
                     </Menu.Item>
-                    <Menu.Item as='a'>
-                        <Icon name='camera' />
+                        <Menu.Item as='a'>
+                            <Icon name='camera' />
                       Channels
                     </Menu.Item>
-                </Sidebar>
+                    </Sidebar>
+                </Grid.Column>
+
             </Grid >
 
         )
